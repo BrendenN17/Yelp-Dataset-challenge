@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QToolBox" name="toolBox">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>951</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>951</width>
+       <height>623</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Milestone 1- page 1</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>941</width>
+        <height>181</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(181, 206, 227);
+font: 13pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="title">
+       <string>Select Location</string>
+      </property>
+      <widget class="QComboBox" name="stateList">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="focusPolicy">
+        <enum>Qt::WheelFocus</enum>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 13pt &quot;Arial&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>30</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>State</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>City</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="cityList">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>50</y>
+         <width>171</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;.AppleSystemUIFont&quot;;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>30</y>
+         <width>60</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ZipCode</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="ZipCodeList">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>50</y>
+         <width>71</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="ZipCodeLabel">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>20</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ZipCode Statistics</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="num_businesses_label">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>70</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>13</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string># Businesses</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pop_label">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>100</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Total Population</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="income_label">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>130</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Average Income</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="num_businesses_obj">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>70</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pop_obj">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>100</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="avg_obj">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>130</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <zorder>label</zorder>
+      <zorder>label_2</zorder>
+      <zorder>cityList</zorder>
+      <zorder>stateList</zorder>
+      <zorder>label_3</zorder>
+      <zorder>ZipCodeList</zorder>
+      <zorder>ZipCodeLabel</zorder>
+      <zorder>num_businesses_label</zorder>
+      <zorder>pop_label</zorder>
+      <zorder>income_label</zorder>
+      <zorder>num_businesses_obj</zorder>
+      <zorder>pop_obj</zorder>
+      <zorder>avg_obj</zorder>
+     </widget>
+     <widget class="QGroupBox" name="businessGroup">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>190</y>
+        <width>741</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(181, 206, 227);
+font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="title">
+       <string>Businesses</string>
+      </property>
+      <widget class="QTableWidget" name="businessTable">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>731</width>
+         <height>161</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;.AppleSystemUIFont&quot;;</string>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>199</y>
+        <width>201</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(178, 200, 219);</string>
+      </property>
+      <property name="title">
+       <string>Filter Categories</string>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>111</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Select Category</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="CategoryList">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>181</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>410</y>
+        <width>951</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(178, 200, 219);</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QTableWidget" name="popularTable">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>451</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="successfulTable">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>20</y>
+         <width>461</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>231</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Popular Businesses (In Zipcode)</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>0</y>
+         <width>271</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Successful Bussinesses (In Zipcode)</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>951</width>
+       <height>623</height>
+      </rect>
+     </property>
+     <attribute name="label">
+      <string>Milestone1-Page2</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
